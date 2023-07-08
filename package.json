@@ -1,0 +1,21 @@
+{
+  "name": "broadcast-receiver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Idris",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-echo": "^1.15.1",
+    "pusher-js": "^8.2.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
