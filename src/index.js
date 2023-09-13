@@ -17,7 +17,7 @@ window.Echo = new Echo({
             Authorization: `Bearer ff`,
         },
     },
-    forceTLS: true,
+    forceTLS: false,
     disableStats: true,
 });
 
