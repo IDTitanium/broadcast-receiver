@@ -5,12 +5,20 @@ window.Pusher = Pusher;
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'Gm3wTg.lAum2A',
+    key: '32JroQ.MDmDTA',
     wsHost: 'realtime-pusher.ably.io',
     wsPort: 443,
     disableStats: true,
     encrypted: true,
-    cluster: 'eu'
+    cluster: 'eu',
+    authEndpoint: `http://localhost:8000/broadcasting/auth`,
+    auth: {
+        headers: {
+            Authorization: `Bearer ff`,
+        },
+    },
+    forceTLS: true,
+    disableStats: true,
 });
 
 window.Echo.channel('property')
